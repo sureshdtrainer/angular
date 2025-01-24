@@ -1,0 +1,29 @@
+<h1>Welcome to Angular!!!</h1>
+<!--Text Interpolation/One way Binding-->
+<p>1 + 1 = {{1+1}}</p>
+<h2>The title is {{title}}</h2>
+<p>Name is {{getName() | uppercase}}</p>
+
+<p>{{employees[2] | lowercase}}</p>
+
+<ul>
+    <li>{{employee.title}}</li>
+    <li>{{employee.name}}</li>
+    <li>{{employee.salary}}</li>
+</ul>
+<img src="{{employee.src}}" height="300px" width="200px" alt="{{employee.alt}}"/>
+<!--Event Binding-->
+<input type="button" value="Save" (click)="clickSave()"/>
+
+<!--ngIf-->
+<div *ngIf="show">
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</div>
+
+<app-sample></app-sample>
+<app-home></app-home>
+<app-signup></app-signup>
